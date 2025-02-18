@@ -1,0 +1,29 @@
+ppss@ppss:~/Desktop/ppss-2025-G7-galvez-romerodeavila/P00-Maven/P00-maven1$ tree                                                              
+.
+├── pom.xml
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── paquete1
+│   │           ├── Matricula.java
+│   │           └── Triangulo.java
+│   └── test
+│       └── java
+│           └── paquete1
+│               ├── MatriculaTest.java
+│               └── TrianguloTest.java
+└── target
+    ├── classes
+    │   └── paquete1
+    │       ├── Matricula.class
+    │       └── Triangulo.class
+    ├── generated-sources
+    │   └── annotations
+    └── maven-status
+        └── maven-compiler-plugin
+            └── compile
+                └── default-compile
+                    ├── createdFiles.lst
+                    └── inputFiles.lst
+
+17 directories, 9 files

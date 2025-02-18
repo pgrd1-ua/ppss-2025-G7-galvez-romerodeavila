@@ -1,0 +1,16 @@
+ppss@ppss:~/Desktop/ppss-2025-G7-galvez-romerodeavila/P00-Maven/P00-maven2$ tree
+.
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── paquete2
+    │           ├── Matricula.java
+    │           └── Triangulo.java
+    └── test
+        └── java
+            └── paquete2
+                ├── MatriculaTest.java
+                └── TrianguloTest.java
+
+8 directories, 5 files

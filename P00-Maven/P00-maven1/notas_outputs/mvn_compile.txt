@@ -1,0 +1,20 @@
+ppss@ppss:~/Desktop/ppss-2025-G7-galvez-romerodeavila/P00-Maven/P00-maven1$ mvn compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< practica1.ppss:P00-maven1 >----------------------
+[INFO] Building P00-maven1 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ P00-maven1 ---
+[INFO] skip non existing resourceDirectory /home/ppss/Desktop/ppss-2025-G7-galvez-romerodeavila/P00-Maven/P00-maven1/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ P00-maven1 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.566 s
+[INFO] Finished at: 2025-02-18T23:05:09+01:00
+[INFO] ------------------------------------------------------------------------
+ppss@ppss:~/Desktop/ppss-2025-G7-galvez-romerodeavila/P00-Maven/P00-maven1$         

@@ -1,0 +1,102 @@
+
+
+
+TRAS EJECUTAR MVN COMPILE
+ppss@ppss:~/Desktop/ppss-2025-G7-galvez-romerodeavila/P00-Maven/P00-maven1$ tree
+.
+├── estructura_directorios_maven.txt
+├── pom.xml
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── paquete1
+│   │           ├── Matricula.java
+│   │           └── Triangulo.java
+│   └── test
+│       └── java
+│           └── paquete1
+│               ├── MatriculaTest.java
+│               └── TrianguloTest.java
+└── target
+    ├── classes
+    │   └── paquete1
+    │       ├── Matricula.class
+    │       └── Triangulo.class
+    ├── generated-sources
+    │   └── annotations
+    └── maven-status
+        └── maven-compiler-plugin
+            └── compile
+                └── default-compile
+                    ├── createdFiles.lst
+                    └── inputFiles.lst
+
+17 directories, 10 files
+
+
+TRAS EJECUTAR MVN CLEAN
+ppss@ppss:~/Desktop/ppss-2025-G7-galvez-romerodeavila/P00-Maven/P00-maven1$ tree                                                              
+.
+├── estructura_directorios_maven.txt
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── paquete1
+    │           ├── Matricula.java
+    │           └── Triangulo.java
+    └── test
+        └── java
+            └── paquete1
+                ├── MatriculaTest.java
+                └── TrianguloTest.java
+
+8 directories, 6 files
+
+
+TRAS EJECUTAR MVN TEST
+ppss@ppss:~/Desktop/ppss-2025-G7-galvez-romerodeavila/P00-Maven/P00-maven1$ tree                                                              
+.
+├── estructura_directorios_maven.txt
+├── pom.xml
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── paquete1
+│   │           ├── Matricula.java
+│   │           └── Triangulo.java
+│   └── test
+│       └── java
+│           └── paquete1
+│               ├── MatriculaTest.java
+│               └── TrianguloTest.java
+└── target
+    ├── classes
+    │   └── paquete1
+    │       ├── Matricula.class
+    │       └── Triangulo.class
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    ├── maven-status
+    │   └── maven-compiler-plugin
+    │       ├── compile
+    │       │   └── default-compile
+    │       │       ├── createdFiles.lst
+    │       │       └── inputFiles.lst
+    │       └── testCompile
+    │           └── default-testCompile
+    │               ├── createdFiles.lst
+    │               └── inputFiles.lst
+    ├── surefire-reports
+    │   ├── paquete1.MatriculaTest.txt
+    │   ├── paquete1.TrianguloTest.txt
+    │   ├── TEST-paquete1.MatriculaTest.xml
+    │   └── TEST-paquete1.TrianguloTest.xml
+    └── test-classes
+        └── paquete1
+            ├── MatriculaTest.class
+            └── TrianguloTest.class
+
+24 directories, 18 files
