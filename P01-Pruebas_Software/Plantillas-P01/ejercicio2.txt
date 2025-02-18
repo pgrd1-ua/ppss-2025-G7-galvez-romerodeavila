@@ -1,0 +1,15 @@
+EJERCICIO 2:
+
+Run configurations para el proyecto Maven SimpleMavenProject:
+
+
+SimpleProject_CompileAll:
+	<aquí debes poner el comando maven que has usado>
+
+
+SimpleProject_Run_tests:
+	<aquí debes poner el comando maven que has usado>
+
+
+SimpleProject_Compile_only_tests:
+	<aquí debes poner el comando maven que has usado>
