@@ -1,0 +1,12 @@
+Ejercicio 2:
+
+Run Configurations para el proyecto Maven SImpleMavenProject
+
+SimpleProject_CompileAll:
+mvn clean compile test-compile ---> mvn clean compile compiler:testCompile
+
+SimpleProject_Run_tests:
+mvn clean test
+
+SimpleProject_Compile_only_tests:
+mvn clean test-compile ---> mvn clean compiler:testCompile

@@ -1,0 +1,52 @@
+Ejercicio 3 fechaValida()
+=====================================
+
+
+## 1. Comportamientos especificados (Conjunto S) - 3 casos
+El conjunto S representa los comportamientos definidos en la especificación, es decir, lo que debería hacer el método `fechaValida()`.
+
+Tres comportamientos que pertenecen al conjunto S:
+
+
+| Día | Mes | Año   | Resultado esperado | Justificación 									|
+|-----|-----|-------|--------------------|-----------------------------						|
+| 29  | 02  | 2024  | Cierto             | 2024 es bisiesto, febrero tiene 29 días. 		|
+| 30  | 02  | 2023  | Falso              | Febrero solo tiene 28 días en años no bisiestos. |
+| 31  | 04  | 2023  | Falso              | Abril solo tiene 30 días. 						|
+	
+
+## 2. Comportamientos programados (Conjunto P) - 2 casos
+El conjunto P representa los comportamientos que realmente han sido programados en `Ejemplo.java`.
+
+Dos comportamientos que pertenecen al conjunto P:
+
+
+| Día | Mes | Año   | Resultado según `fechaValida()` | Justificación 							|
+|-----|-----|-------|-----------------------------    |-----------------------------------------|
+| 29  | 02  | 2000  | Cierto                          | 2000 es bisiesto (divisible entre 400). |
+| 31  | 12  | 2023  | Cierto                          | Diciembre tiene 31 días.                |
+
+
+Posible error en P: No sabemos si la implementación cubre correctamente casos como el año 1900 (no bisiesto, pero divisible por 100). Para verificarlo, debemos incluirlo en el conjunto de pruebas.
+
+## 3. Conjunto de comportamientos probados (Conjunto T)
+El conjunto T contiene los comportamientos que han sido realmente probados mediante tests en `EjemploTest.java`.
+
+
+Comportamientos probados (T):
+
+| Día | Mes | Año   | Resultado esperado | Resultado en ejecución                 |
+|-----|-----|-------|--------------------|----------------------                  |
+| 29  | 02  | 2020  | Cierto             | Pasa el test                           |
+| 30  | 02  | 2023  | Falso              | (No testeado aún)                      |
+| 31  | 04  | 2023  | Falso              | (No testeado aún)                      |
+| 29  | 02  | 1900  | Falso              | (No testeado aún, pero debería fallar) |
+| 29  | 02  | 2000  | Cierto             | (No testeado aún, pero debería pasar)  |
+
+
+## 4. Automatización de pruebas
+
+
+
+
+
