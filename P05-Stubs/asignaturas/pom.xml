@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ppss.practica3</groupId>
-    <artifactId>drivers</artifactId>
+    <groupId>ppss.P05</groupId>
+    <artifactId>asignaturas</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -20,18 +20,6 @@
             <version>5.11.4</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-        <!--dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>5.10.1</version>
-            <scope>test</scope>
-        </dependency-->
     </dependencies>
     <build>
         <plugins>
@@ -79,9 +67,7 @@
                     </statelessTestsetInfoReporter>
                 </configuration>
             </plugin>
-
-
-
         </plugins>
     </build>
+
 </project>
