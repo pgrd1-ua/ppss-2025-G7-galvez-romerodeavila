@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,20 +25,10 @@ public class MatriculaAlumnoTest {
         String dni = "00000000T";
         String[] asignaturasSolicitadas = {"MD", "ZZ", "FBD", "P1"};
 
-        ArrayList<String> listaErroresEsperados = new ArrayList<>();
-        listaErroresEsperados.add("Asignatura ZZ no existe");
-        listaErroresEsperados.add("Asignatura P1 ya cursada");
-
-        ArrayList<String> asignaturasTotales = new ArrayList<>();
-        asignaturasTotales.add("MD");
-        asignaturasTotales.add("FBD");
-        asignaturasTotales.add("P1");
-        ArrayList<String> asignaturasCursadas = new ArrayList<>();
-        asignaturasCursadas.add("P1");
-
-        ArrayList<String> asignaturasMatriculadas = new ArrayList<>();
-        asignaturasMatriculadas.add("MD");
-        asignaturasMatriculadas.add("FBD");
+        ArrayList<String> listaErroresEsperados = new ArrayList<>(Arrays.asList("Asignatura ZZ no existe","Asignatura P1 ya cursada"));
+        ArrayList<String> asignaturasTotales = new ArrayList<>(Arrays.asList("MD","FBD","P1"));
+        ArrayList<String> asignaturasCursadas = new ArrayList<>(Arrays.asList("P1"));
+        ArrayList<String> asignaturasMatriculadas = new ArrayList<>(Arrays.asList("MD","FBD"));
 
         operacionStub.setAsignaturas(asignaturasTotales);
         operacionStub.setCursadas(asignaturasCursadas);
@@ -59,17 +50,9 @@ public class MatriculaAlumnoTest {
         String dni = "00000000T";
         String[] asignaturasSolicitadas = {"PPSS", "ADA", "P3"};
         ArrayList<String> listaErroresEsperados = new ArrayList<>();
-
-        ArrayList<String> asignaturasTotales = new ArrayList<>();
-        asignaturasTotales.add("PPSS");
-        asignaturasTotales.add("ADA");
-        asignaturasTotales.add("P3");
+        ArrayList<String> asignaturasTotales = new ArrayList<>(Arrays.asList("PPSS","ADA","P3"));
         ArrayList<String> asignaturasCursadas = new ArrayList<>();
-
-        ArrayList<String> asignaturasMatriculadas = new ArrayList<>();
-        asignaturasMatriculadas.add("PPSS");
-        asignaturasMatriculadas.add("ADA");
-        asignaturasMatriculadas.add("P3");
+        ArrayList<String> asignaturasMatriculadas = new ArrayList<>(Arrays.asList("PPSS","ADA","P3"));
 
         operacionStub.setAsignaturas(asignaturasTotales);
         operacionStub.setCursadas(asignaturasCursadas);

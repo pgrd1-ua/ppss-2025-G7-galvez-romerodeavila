@@ -14,25 +14,11 @@ public class OperacionStub extends Operacion{
         this.cursadas = cursadas;
     }
     @Override
-    public void compruebaMatricula(String dni, String asignatura) throws AsignaturaIncorrectaException, AsignaturaCursadaException{
-        boolean cursada = false;
-        boolean existe = false;
-        for (String a: asignaturas) {
-            if(Objects.equals(a, asignatura)){
-                existe = true;
-                break;
-            }
-        }
-        for (String c : cursadas){
-            if (Objects.equals(c, asignatura)){
-                cursada = true;
-                break;
-            }
-        }
-        if (!existe){
+    public void compruebaMatricula(String dni, String asignatura) throws AsignaturaIncorrectaException, AsignaturaCursadaException {
+        if (!asignaturas.contains(asignatura)){
             throw new AsignaturaIncorrectaException();
         }
-        if (cursada){
+        if (cursadas.contains(asignatura)){
             throw new AsignaturaCursadaException();
         }
     }
