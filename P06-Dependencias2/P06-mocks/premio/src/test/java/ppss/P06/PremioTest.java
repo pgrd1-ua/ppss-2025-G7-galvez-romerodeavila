@@ -15,7 +15,6 @@ public class PremioTest {
         ctrl = EasyMock.createStrictControl();
         premio = EasyMock.partialMockBuilder(Premio.class).addMockedMethod("generaNumero").mock(ctrl);
         clienteWebService = ctrl.mock(ClienteWebService.class);
-
     }
     @Test
     public void A_compruebaPremio_should_return_finalChampions_when_num007(){

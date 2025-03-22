@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ficheroRunConfigurations" type="MavenRunConfiguration" factoryName="Maven">
+  <configuration default="false" name="reservaRunConfigurations" type="MavenRunConfiguration" factoryName="Maven">
     <MavenSettings>
       <option name="myGeneralSettings" />
       <option name="myRunnerSettings" />
@@ -14,7 +14,6 @@
               <option value="clean" />
               <option value="compile" />
               <option value="test" />
-              <option value="install" />
             </list>
           </option>
           <option name="multimoduleDir" />
@@ -26,7 +25,7 @@
             <list />
           </option>
           <option name="resolveToWorkspace" value="false" />
-          <option name="workingDirPath" value="$PROJECT_DIR$/fichero" />
+          <option name="workingDirPath" value="$PROJECT_DIR$/reserva" />
         </MavenRunnerParameters>
       </option>
     </MavenSettings>

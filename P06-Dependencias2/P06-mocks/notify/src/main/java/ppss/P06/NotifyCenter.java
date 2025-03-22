@@ -13,16 +13,21 @@ public class NotifyCenter {
     public void sendNotify(String email) throws FailedNotifyException{
         throw new UnsupportedOperationException("Not supported yet");
     }
+    public LocalDate getFechaActual(){
+        LocalDate today = LocalDate.now();
+        return today;
+    }
     public void notifyUsers(LocalDate fecha) throws FailedNotifyException {
         int failed = 0;
-        MailServer server = getServer(); //D.E de la clase
+        MailServer server = getServer(); //D.E de la clase de tipo MailServer
         List<String> emails;
-        LocalDate today = LocalDate.now();
+        //LocalDate today = LocalDate.now(); //D.E de tipo LocalDate
+        LocalDate today = getFechaActual();
         if (today.isEqual(fecha)) {
             emails = server.findMailItemsWithDate(fecha); //D.E de MailServer
             for (String email : emails) {
                 try {
-                    sendNotify(email); //D.E de la clase
+                    sendNotify(email); //D.E de la clase local
                 }
                 catch (FailedNotifyException ex) {
                     failed++;
