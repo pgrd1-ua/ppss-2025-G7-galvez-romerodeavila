@@ -1,9 +1,7 @@
 package ppss.matriculacion.dao;
 
 import java.util.List;
-
 import ppss.matriculacion.to.AlumnoTO;
-
 
 /**
  * Interfaz comun de los objetos que dan acceso a los datos de los alumnos.

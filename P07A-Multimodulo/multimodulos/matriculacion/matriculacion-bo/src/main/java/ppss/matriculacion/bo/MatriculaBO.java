@@ -1,13 +1,9 @@
 package ppss.matriculacion.bo;
 
 import java.util.List;
-
 import ppss.matriculacion.dao.FactoriaDAO;
 import ppss.matriculacion.proxy.ProxyDatosEconomicos;
-import ppss.matriculacion.to.AlumnoTO;
-import ppss.matriculacion.to.AsignaturaTO;
-import ppss.matriculacion.to.MatriculaTO;
-import ppss.matriculacion.to.ReciboMatriculaTO;
+import ppss.matriculacion.to.*;
 
 public class MatriculaBO {
 
