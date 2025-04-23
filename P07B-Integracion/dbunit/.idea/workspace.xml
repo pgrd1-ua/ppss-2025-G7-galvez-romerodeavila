@@ -24,6 +24,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -48,12 +55,15 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Maven. [clean,compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean,verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dbunitexample [clean,verify].executor&quot;: &quot;Run&quot;,
     &quot;Maven.dbunitexample [compile,test].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ppss/Desktop/ppss-2025-G7-galvez-romerodeavila/P07B-Integracion/dbunit/dbunitexample/src/test/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ppss/Desktop/ppss-2025-G7-galvez-romerodeavila/P07B-Integracion/dbunit/matriculacion&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -73,15 +83,61 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dbunitexample/src/test/resources" />
-      <recent name="$PROJECT_DIR$/dbunitexample/src/test" />
+      <recent name="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/matriculacion-dao/src/test/java" />
+      <recent name="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/matriculacion-proxy/src/test" />
+      <recent name="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/matriculacion-dao/src/test" />
+      <recent name="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/matriculacion-comun/src/test" />
+      <recent name="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/matriculacion-bo/src/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/matriculacion-dao/src/test/resources" />
+      <recent name="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/matriculacion-dao/src/test/java/ppss/matriculacion/dao" />
+      <recent name="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/matriculacion-dao/src/test/resources/sql" />
       <recent name="$PROJECT_DIR$/dbunitexample/src/test/java/ppss" />
       <recent name="$PROJECT_DIR$/dbunitexample/src/test/resources/sql" />
-      <recent name="$PROJECT_DIR$/dbunitexample/src/test/resources" />
-      <recent name="$PROJECT_DIR$/dbunitexample/src/main/java/ppss" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ppss.matriculacion.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven. [clean,verify]">
+    <configuration name=" [clean,verify]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="verify" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/matriculacion" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.matriculacion_compile" />
+      <item itemvalue="Maven.matriculacion_package" />
+      <item itemvalue="Maven.dbunitexample [clean,verify]" />
+      <item itemvalue="Maven. [clean,verify]" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -102,6 +158,11 @@
       <workItem from="1745343132947" duration="3234000" />
       <workItem from="1745404133959" duration="3917000" />
       <workItem from="1745408751917" duration="120000" />
+      <workItem from="1745421806737" duration="4897000" />
+      <workItem from="1745426825408" duration="234000" />
+      <workItem from="1745427111328" duration="25000" />
+      <workItem from="1745427375919" duration="4723000" />
+      <workItem from="1745433161597" duration="166000" />
     </task>
     <servers />
   </component>

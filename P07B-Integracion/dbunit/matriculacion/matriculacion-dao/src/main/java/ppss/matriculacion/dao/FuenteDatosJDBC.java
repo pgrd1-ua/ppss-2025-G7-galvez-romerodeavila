@@ -10,7 +10,7 @@ public class FuenteDatosJDBC {
 	
 	private FuenteDatosJDBC() {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver" );
+			Class.forName("org.hsqldb.jdbcDriver" );
 			
 		} catch (ClassNotFoundException e) {
 			System.err.println("No se encuentra el driver de la BD");
@@ -25,7 +25,7 @@ public class FuenteDatosJDBC {
 	}
 	
 	public Connection getConnection() throws SQLException {
-		return DriverManager.getConnection("jdbc:mysql://localhost:3306/DBUNIT", "root", "ppss");
+		return DriverManager.getConnection("jdbc:hsqldb:file:matriculacionbd;ifexists=true", "SA", "");
 		
 	}
 }
