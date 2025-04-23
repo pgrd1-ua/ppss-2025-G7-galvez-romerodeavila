@@ -7,6 +7,7 @@ import org.dbunit.database.IDatabaseConnection;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.ITable;
 import org.dbunit.util.fileloader.FlatXmlDataFileLoader;
+import java.sql.SQLException;
 
 import org.junit.jupiter.api.*;
 
@@ -19,7 +20,7 @@ import org.junit.jupiter.api.*;
     Si la SUT puede lanza una excepción, SIEMPRE usaremos assertDoesNotThrow para
     invocar a la sut cuando no esperemos que se lance dicha excepción (independientemente de que hayamos propagado las excepciones provocadas por dbunit).
 */
-public class ClienteDAO_IT {
+public class ClienteDAO_IT_Test {
   
   private ClienteDAO clienteDAO; //SUT
   private IDatabaseTester databaseTester;
@@ -29,7 +30,7 @@ public class ClienteDAO_IT {
   public void setUp() throws Exception {
 
     String cadena_conexionDB = "cadena de conexion";
-    databaseTester = new JdbcDatabaseTester("clase del driver jdbc para poder acceder a la BD",
+    databaseTester = new MiJdbcDatabaseTester("clase del driver jdbc para poder acceder a la BD",
             "cadena de conexion", "login", "password");
     connection = databaseTester.getConnection();
 
@@ -59,7 +60,6 @@ public class ClienteDAO_IT {
     ITable expectedTable = expectedDataSet.getTable("cliente");
 
     Assertion.assertEquals(expectedTable, actualTable);
-
    }
 
   @Test
@@ -87,4 +87,68 @@ public class ClienteDAO_IT {
     Assertion.assertEquals(expectedTable, actualTable);
   }
 
+  @Test
+  public void D3_insert_should_return_exception_when_John_exists() throws Exception {
+    String excepcionEsperada = "Duplicate entry";
+    Cliente cliente = new Cliente(1,"John", "Smith");
+    cliente.setDireccion("1 Main Street");
+    cliente.setCiudad("Anycity");
+
+    //inicializamos la BD
+    IDataSet dataSet = new FlatXmlDataFileLoader().load("/cliente-initD3.xml");
+    databaseTester.setDataSet(dataSet);
+    databaseTester.onSetup();
+
+    //invocamos a la sut
+    SQLException excepcionObtenida = Assertions.assertThrows(SQLException.class ,()->clienteDAO.insert(cliente));
+
+    Assertions.assertEquals(excepcionEsperada, excepcionObtenida.getMessage());
+  }
+  @Test
+  public void D4_update_should_update_otherstreet_to_cliente_when_1MainStreet() throws Exception {
+    Cliente cliente = new Cliente(1,"John", "Smith");
+    cliente.setDireccion("Other Street"); //
+    cliente.setCiudad("Newcity"); //
+
+    //inicializamos la BD
+    IDataSet dataSet = new FlatXmlDataFileLoader().load("/cliente-esperado.xml");
+    databaseTester.setDataSet(dataSet);
+    databaseTester.onSetup();
+
+    //invocamos a la sut
+    Assertions.assertDoesNotThrow(()->clienteDAO.update(cliente));
+
+    //recuperamos los datos de la BD después de invocar al SUT
+    IDataSet databaseDataSet = connection.createDataSet();
+    ITable actualTable = databaseDataSet.getTable("cliente");
+
+    //creamos el dataset con el resultado esperado
+    IDataSet expectedDataSet = new FlatXmlDataFileLoader().load("/cliente-esperadoD4.xml");
+    ITable expectedTable = expectedDataSet.getTable("cliente");
+
+    Assertion.assertEquals(expectedTable, actualTable);
+  }
+  @Test
+  public void D5_retrieve_should_retrive_Jhon_when_ID1() throws Exception {
+    int idRetrieve = 1;
+    Cliente cliente = new Cliente(1,"John", "Smith");
+    cliente.setDireccion("Other Street"); //
+    cliente.setCiudad("Newcity"); //
+
+    //inicializamos la BD
+    IDataSet dataSet = new FlatXmlDataFileLoader().load("/cliente-esperadoD4.xml");
+    databaseTester.setDataSet(dataSet);
+    databaseTester.onSetup();
+
+    //invocamos a la sut
+    Cliente clienteObtenido = Assertions.assertDoesNotThrow(()->clienteDAO.retrieve(idRetrieve));
+
+    Assertions.assertAll(
+            () -> Assertions.assertEquals(cliente.getId(), clienteObtenido.getId()),
+            () -> Assertions.assertEquals(cliente.getNombre(), clienteObtenido.getNombre()),
+            () -> Assertions.assertEquals(cliente.getApellido(), clienteObtenido.getApellido()),
+            () -> Assertions.assertEquals(cliente.getDireccion(), clienteObtenido.getDireccion()),
+            () -> Assertions.assertEquals(cliente.getCiudad(), clienteObtenido.getCiudad())
+    );
+  }
 }
