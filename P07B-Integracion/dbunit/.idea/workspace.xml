@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec03bd12-72e5-48b7-8a1d-f9bb1c80fb68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dbunitexample/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbunitexample/src/test/resources/cliente-esperado.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbunitexample/src/test/resources/cliente-esperadoD4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbunitexample/src/test/resources/cliente-init.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbunitexample/src/test/resources/cliente-initD3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plantillas-P07B/ejercicio1/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbunitexample/src/main/java/ppss/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plantillas-P07B/ejercicio1/ClienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbunitexample/src/main/java/ppss/ClienteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plantillas-P07B/ejercicio1/ClienteDAO_IT.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbunitexample/src/test/java/ppss/ClienteDAO_IT_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plantillas-P07B/ejercicio1/IClienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbunitexample/src/main/java/ppss/IClienteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plantillas-P07B/ejercicio1/MiJdbcDatabaseTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbunitexample/src/test/java/ppss/MiJdbcDatabaseTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plantillas-P07B/ejercicio1/cliente-esperado.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plantillas-P07B/ejercicio1/cliente-init.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plantillas-P07B/ejercicio1/create_table_customer.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dbunitexample/src/test/resources/sql/create_table_customer.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +51,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ppss/Desktop/ppss-2025-G7-galvez-romerodeavila/P07B-Integracion/dbunit/matriculacion&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ppss/Desktop/ppss-2025-G7-galvez-romerodeavila/P07B-Integracion/dbunit/matriculacion/matriculacion-dao&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -126,7 +114,7 @@
               <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/matriculacion" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/matriculacion/matriculacion-dao" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
@@ -162,7 +150,8 @@
       <workItem from="1745426825408" duration="234000" />
       <workItem from="1745427111328" duration="25000" />
       <workItem from="1745427375919" duration="4723000" />
-      <workItem from="1745433161597" duration="166000" />
+      <workItem from="1745433161597" duration="1620000" />
+      <workItem from="1745682673807" duration="70000" />
     </task>
     <servers />
   </component>
