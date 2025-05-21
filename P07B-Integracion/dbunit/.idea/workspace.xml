@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec03bd12-72e5-48b7-8a1d-f9bb1c80fb68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P08-Webdriver/madisonisland/src/test/java/ppss/Ejercicio1/sinPageObject/TestCreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../P08-Webdriver/madisonisland/src/test/java/ppss/Ejercicio1/sinPageObject/TestCreateAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Maven. [clean,compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean,verify,test].executor&quot;: &quot;Run&quot;,
     &quot;Maven. [clean,verify].executor&quot;: &quot;Run&quot;,
     &quot;Maven.dbunitexample [clean,verify].executor&quot;: &quot;Run&quot;,
     &quot;Maven.dbunitexample [compile,test].executor&quot;: &quot;Run&quot;,
@@ -88,8 +90,8 @@
       <recent name="ppss.matriculacion.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven. [clean,verify]">
-    <configuration name=" [clean,verify]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven. [clean,verify,test]">
+    <configuration name=" [clean,verify,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -103,6 +105,7 @@
               <list>
                 <option value="clean" />
                 <option value="verify" />
+                <option value="test" />
               </list>
             </option>
             <option name="multimoduleDir" />
@@ -124,7 +127,7 @@
       <item itemvalue="Maven.matriculacion_compile" />
       <item itemvalue="Maven.matriculacion_package" />
       <item itemvalue="Maven.dbunitexample [clean,verify]" />
-      <item itemvalue="Maven. [clean,verify]" />
+      <item itemvalue="Maven. [clean,verify,test]" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -153,6 +156,8 @@
       <workItem from="1745433161597" duration="1620000" />
       <workItem from="1745682673807" duration="70000" />
       <workItem from="1746034527847" duration="672000" />
+      <workItem from="1746036275669" duration="77000" />
+      <workItem from="1746207102870" duration="87000" />
     </task>
     <servers />
   </component>
